@@ -12,10 +12,51 @@ html,body{
 }
 .wrapper{
     width: 370px;
-    padding-left: 10px;
-    background: cyan;
+    background: #ffffff;
     border-radius: 5px;
     border: 1px solid gray;
     border-top: 0px;
 
+}
+.wrapper .title{
+    background: cyan;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    text-align: center;
+    border-bottom: 1px solid #1111ff;
+    border-radius: 5px 5px 0 0;
+}
+.wrapper .form{
+    padding: 20px 15px;
+    min-height: 400px;
+    max-height: 400px;
+    /* overflow-y: auto; */
+}
+.wrapper .form .inbox{
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+}
+.wrapper .form .inbox .icon{
+    height: 40px;
+    width: 40px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 40%;
+    font-size: 18px;
+    background: #007bff;
+}
+.wrapper .form .inbox .msg-header{
+    max-width: 53%;
+    margin-left: 10px;
+}
+.form .inbox .msg-header p{
+    color: #ffffff;
+    background: #007bff;
+    border-radius: 10px;
+    padding: 8px 10px;
+    font-size: 14px;
 }
