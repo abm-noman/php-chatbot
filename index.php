@@ -45,10 +45,11 @@
                 $.ajax({
                     url: 'message.php',
                     type: 'POST',
-                    data: 'text ='+$value,
+                    data: 'text='+$value,
                     success: function(result){
                         $reply = '<div class="bot-inbox inbox"><div class="icon"><i class="fas fa-user"></i></div><div class="msg-header"><p>'+ result +'</p></div></div>';
                         $(".form").append($reply);
+                        $(".form").scrollTop($(".form")[0].scrollHeight)
                     }
                 });
             });
