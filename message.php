@@ -11,11 +11,12 @@ $check_data = "SELECT replies FROM bot WHERE queries LIKE '%$setMsg%'";
 $run_query = mysqli_query($conn, $check_data) or die("Error");
 
 
-// If user query matches Database Queries, We will show Replies
+// If user query matches Database Queries, We will show Replies Otherwise else statement
 if(mysqli_num_rows($run_query) > 0){
 
 }else{
     echo "Sorry! I can't get you.";
 }
+
 
 ?>
